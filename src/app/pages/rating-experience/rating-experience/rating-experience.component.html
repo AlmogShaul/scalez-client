@@ -1,0 +1,26 @@
+<div class="header">
+  <img src="assets/images/savvy.png">
+  <div class="product-type">{{productCategory}}</div>
+</div>
+<div class="main-content">
+  <div class="main-header">
+    <div class="styler-img"></div>
+    <span class="styled-by">
+      <span>Styled by</span>
+      <span style="margin-left:5px; font-weight: bold"> {{currentProduct?.manufacturer}}</span>
+    </span>
+    <span class="from">From </span><span style="margin-left:5px; font-weight: bold">{{currentProduct?.brand}}</span>
+  </div>
+  <div class="main-body">
+    <img class="body-img" src="{{productImage}}">
+  </div>
+  <div class="footer">
+    <span class="price">{{currentProduct?.price}}$</span>
+    <span class="brand">{{currentProduct?.brand}}</span>
+  </div>
+</div>
+<div class="rating-buttons">
+  <app-rating-button-ab-wrapper [like]="false" (click)="dislike()"></app-rating-button-ab-wrapper>
+  <app-rating-button-ab-wrapper  [like]="true" (click)="like()"></app-rating-button-ab-wrapper >
+</div>
+

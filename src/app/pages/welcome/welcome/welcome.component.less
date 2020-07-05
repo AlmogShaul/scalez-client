@@ -1,0 +1,44 @@
+@import "src/styles.less";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: @page-padding;
+  box-sizing: border-box;
+}
+
+.img-wrapper {
+  width: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+h1 {
+  color: #0D0048;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h2 {
+  color: #0D0048;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 21px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+app-main-button {
+  height: 50px;
+  width: 100%;
+}

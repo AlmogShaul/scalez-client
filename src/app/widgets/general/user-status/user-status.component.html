@@ -1,0 +1,9 @@
+
+<div class="status">
+  <p class="main-msg">Like At Least {{minProductsToLike}} Items</p>
+  <p class="secondary-msg" *ngIf="!userHasMinRatings">(You currently have {{likedProductsSum}} )</p>
+  <p class="secondary-msg" *ngIf="userHasMinRatings" >(You already have the items )</p>
+</div>
+<div class="heart">
+<img src="/assets/images/heart2.png">
+</div>
